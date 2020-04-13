@@ -92,7 +92,7 @@ resources:
           SecurityGroupIds:
             - !Ref BatchSecurityGroup
           Type: SPOT
-          SpotIamFleetRole: arn:aws:iam::#{AWS::AccountId}:role/aws-ec2-spot-fleet-tagging-role
+          SpotIamFleetRole: arn:aws:iam::#{AWS::AccountId}:role/aws-ec2-spot-fleet-role
           Subnets:
             - !Ref PublicSubnet1
           MinvCpus: 0
